@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <title>
+    Text Extraction
+  </title>
+</head>
+
+<body>
+
+  <h1>Text Extraction</h1>
+
+  <form action='/' method="post" enctype="multipart/form-data">
+    <input type="file" id="file_upload" name="file_upload" accept="image/*" />
+    <button type=submit id="submit_button" disabled>Extract</button>
+  </form>
+
+  {{result}}
+
+  <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+</html>
