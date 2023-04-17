@@ -38,7 +38,7 @@ git clone https://github.com/Pranav-Nagpure/Text-Extraction.git
 
 2. Change Working Directory
 ```sh
-cd Text Extraction
+cd Text-Extraction
 ```
 
 3. If needed create a Virtual Environment and activate it
