@@ -29,5 +29,8 @@ def index():
         # Remove Special Characters
         text = ''.join(c for c in text if (
             c.isalnum() or c == ' ' or c == '\n'))
+        
+        # Converting text to list of lines
+        text = text.split('\n')
 
         return render_template('index.html', result=text)

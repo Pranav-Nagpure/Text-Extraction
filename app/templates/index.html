@@ -17,7 +17,9 @@
     <button type=submit id="submit_button" disabled>Extract</button>
   </form>
 
-  {{result}}
+  {% for line in result: %}
+  <p>{{ line }}</p>
+  {% endfor %}
 
   <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
 
