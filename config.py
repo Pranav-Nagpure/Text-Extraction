@@ -1,7 +1,4 @@
-import os
-
 class Config(object):
-
     DEBUG = False
     TESTING = False
 
@@ -33,7 +30,7 @@ class DevelopmentConfig(Config):
 class TestingConfig(Config):
     DEBUG = True
 
-    DB_NAME = 'production-db'
+    DB_NAME = 'development-db'
     DB_USERNAME = 'root'
     DB_PASSWORD = 'password'
 
