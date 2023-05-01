@@ -1,7 +1,7 @@
-from app import app
-from flask import render_template, request
-from PIL import Image
 import pytesseract
+from app import app
+from PIL import Image
+from flask import render_template, request
 
 app.config['INITIAL_FILE_UPLOADS'] = 'app/static/uploads'
 app.config['EXISTING_FILE'] = 'app/static/original'
@@ -27,8 +27,7 @@ def index():
         text = pytesseract.image_to_string(img, config=custom_config)
 
         # Remove Special Characters
-        text = ''.join(c for c in text if (
-            c.isalnum() or c == ' ' or c == '\n'))
+        text = ''.join(c for c in text if (c.isalnum() or c == ' ' or c == '\n'))
         
         # Converting text to list of lines
         text = text.split('\n')

@@ -13,6 +13,8 @@
 
 Visit the <a href="https://text-extractor.onrender.com">Web Application</a> deployed on render
 
+Warning: Render does not support pytesseract
+
 </div>
 
 ## __About__
